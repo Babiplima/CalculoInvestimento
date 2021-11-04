@@ -7,9 +7,12 @@ public class InvestidorDTO {
 
     //Atributos
 
-    @Email
+    @Email(message = "Email inválido")
     private String email;
+    @Size(min = 2, max = 50, message = "nome deve ter no minimo 2 à 50 caracteres")
+    @NotBlank
     private String nome;
+    @CPF(message = "CPF INVALIDO")
     private String cpf;
     private int periodoDeAplicacaoMeses;
     private double valorPrevisto;
