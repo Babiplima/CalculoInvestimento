@@ -4,7 +4,7 @@ public enum Risco {
 
     //Percenstuais de taxas de retorno
 
-    ALTO (0.025), MEDIO(0.015), BAIXO(0.05);
+    ALTO (0.025), MEDIO(0.015), BAIXO(0.005);
 
     //Atributos, construtores e get
 

@@ -16,10 +16,11 @@ public class InvestidorDTO {
     private String cpf;
     private int periodoDeAplicacaoMeses;
     private double valorPrevisto;
+    private  Risco risco;
 
     //Métodos construtores
 
-    public InvestidorDTO() {
+    public InvestidorDTO(double valorAplicado, double valorDoLucro, double valorTotal) {
     }
 
     public InvestidorDTO(String email, String nome, String cpf, int periodoDeAplicacaoMeses, double valorPrevisto) {

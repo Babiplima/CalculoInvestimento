@@ -8,12 +8,15 @@ import javax.validation.Valid;
 
 public class InvestimentoController {
 
+    //Injeção de dependência (Objeto da classe Service sendo injetado)
     @Autowired
     private InvestidorService investidorService;
 
+    @PutMapping
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void cadastrarInvestidor(@RequestBody @Valid InvestidorDTO){InvestidorService.salvarInvestimento(InvestidorDTO);}
+    public void InvestidorDTOsaida simularInvestimento (@RequestBody @Valid InvestidorDTO investidorDTO)
+    return
 
     @GetMapping
     public List<InvestidorDTO> exibirMailing(){ return investidorService retornarTodosOsInvestidores();}
